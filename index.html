@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystical Fortune Teller App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Mystical Fortune Teller App</h1>
+    <!-- Name & Zodiac Form -->
+    <div class="form-grid">
+      <div class="input-group">
+        <label>Enter Your Name</label>
+        <input type="text" id="userName" placeholder="e.g Kelvin">
+      </div>
+      <div class="input-group">
+        <label>Zodiac Sign</label>
+        <select id="zodiacSign" class="zodiacSign">
+          <option value="Aries">Aries</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagittarius">Sagittarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+        </select>
+      </div>
+      <button id="revealBtn">Reveal My Fate</button>
+    </div>
+
+     <!-- DESTINY ZONE -->
+    <div class="destiny-zone" id="destinyZone">
+      <h2>Destiny Zone</h2>
+      <div id="destinyContent">
+        <p class="empty-message" style="text-align:center; padding:2rem 0;">Your fate awaits... enter your name and press Reveal</p>
+      </div>
+    </div>
+
+    <!-- ARCHIVE SEARCH SECTION -->
+    <div class="archive-section">
+      <h3>Explore the Cosmos</h3>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search fortunes...(e.g. wind, trickster)">
+        <button id="searchBtn">Search</button>
+        <button id="sortBtn">Sort A-Z</button>
+      </div>
+      <div class="fortune-list" id="fortuneList">
+        <ul id="fortuneItems">
+          <li class="empty-message" style="list-style:none; background:transparent; border:none;">The full archive will appear here</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
